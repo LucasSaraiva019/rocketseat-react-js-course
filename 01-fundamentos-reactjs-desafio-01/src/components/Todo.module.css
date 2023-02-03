@@ -1,0 +1,105 @@
+.todo {
+  max-width: 46rem;
+  margin: 2rem auto;
+}
+
+.addTodo {
+  display: flex;
+  padding: 0;
+  gap: 0.5rem;
+
+  position: absolute;
+  width: 46rem;
+  height: 3.375rem;
+  left: calc(50% - 46rem / 2);
+  top: 10rem;
+}
+
+.addTodo input {
+  background: var(--gray-500);
+  color: var(--gray-100);
+  border-radius: 8px;
+  border: 1px solid var(--gray-700);
+  width: 46rem;
+  padding: 1rem;
+}
+
+.addTodo input:hover {
+  border: 1px solid var(--purple-dark);
+}
+
+.addTodo button {
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  border-radius: 8px;
+  width: 7rem;
+  font-weight: 700;
+  padding: 0 0.5rem;
+  font-size: 0.875rem;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+}
+
+.addTodo button:hover {
+  background: var(--blue);
+  color: var(--gray-100);
+}
+
+.todoBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 5.5rem;
+  width: 46rem;
+  height: 33.5rem;
+}
+
+.count {
+  width: 46rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.count span {
+  padding: 0.1rem 0.5rem;
+  width: 10rem;
+  height: 10rem;
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  border-radius: 10px;
+}
+
+.createdTasks {
+  color: var(--blue);
+  padding-right: 0.5rem;
+}
+
+.finishedTasks {
+  color: var(--purple);
+  padding-right: 0.5rem;
+}
+
+.emptyTodo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1.5rem;
+  gap: 1rem;
+
+  width: 46rem;
+  height: 15.25rem;
+
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.emptyTodo span {
+  color: var(--gray-300);
+}
